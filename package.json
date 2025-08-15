@@ -9,5 +9,6 @@
   "dependencies": {
     "aws-sdk": "^2.0.0",
     "jsonwebtoken": "^8.5.1"
-  }
+  },
+  "license": "MIT"
 }

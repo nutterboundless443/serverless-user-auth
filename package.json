@@ -1,15 +1,1 @@
-{
-  "name": "serverless-user-auth",
-  "version": "1.0.0",
-  "description": "无服务器用户认证系统",
-  "main": "src/lambda.js",
-  "scripts": {
-    "deploy": "serverless deploy"
-  },
-  "dependencies": {
-    "aws-sdk": "^2.0.0",
-    "jsonwebtoken": "^8.5.1"
-  },
-  "license": "MIT",
-  "author": "Your Name"
-}
+{"name":"serverless-user-auth","version":"1.0.0","description":"无服务器用户认证系统","main":"src/lambda.js","scripts":{"deploy":"serverless deploy"},"dependencies":{"aws-sdk":"^2.0.0","jsonwebtoken":"^8.5.1"},"license":"MIT","author":"Updated Author Name"}

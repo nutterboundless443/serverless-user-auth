@@ -1,0 +1,32 @@
+service: serverless-user-auth
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  auth:
+    handler: src/lambda.handler
+    events:
+      - http:
+          path: register
+          method: post
+      - http:
+          path: login
+          method: post
+
+resources:
+  Resources:
+    UsersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: Users
+        AttributeDefinitions:
+          - AttributeName: email
+            AttributeType: S
+        KeySchema:
+          - AttributeName: email
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1

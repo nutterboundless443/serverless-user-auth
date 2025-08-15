@@ -10,10 +10,10 @@ functions:
     events:
       - http:
           path: register
-          method: post
+          method: post  # Registration endpoint for user authentication
       - http:
           path: login
-          method: post
+          method: post     # Login endpoint for user authentication
 
 resources:
   Resources:

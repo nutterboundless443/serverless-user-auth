@@ -28,5 +28,5 @@ resources:
           - AttributeName: email
             KeyType: HASH
         ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
+          ReadCapacityUnits: 1  # Read capacity units for DynamoDB table
+          WriteCapacityUnits: 1  # Write capacity units for DynamoDB table
